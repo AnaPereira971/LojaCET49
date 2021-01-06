@@ -14,10 +14,13 @@ namespace LojaCET49.Data.Entities
         [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
         public decimal Price { get; set; }
 
+        [Display(Name = "Image")]
         public string URLImage { get; set; }
 
+        [Display(Name = "Last Purchase")]
         public DateTime LastPurchase { get; set; }
 
+        [Display(Name = "Last Sale")]
         public DateTime LastSale { get; set; }
 
         public bool Avaiable { get; set; }
